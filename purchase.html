@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web bán đồ ăn</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/cartProduct.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header"></div>
+      <div id="banner"></div>
+
+      <div id="containers">
+        <h2>DANH SÁCH SẢN PHẨM</h2>
+        <div class="container">
+          <div class="cart-product cart-title">
+            <p>Ngày Mua</p>
+            <p>Thông Tin Khách Hàng</p>
+            <p>Sản Phẩm</p>
+            <p>Thành Tiền</p>
+            <p>Trạng Thái</p>
+            <p>Thao tác</p>
+          </div>
+          <div id="list-products"></div>
+          <div class="box-product">
+            <div class="cart-product cart-title">
+              <p>Ảnh Sản Phẩm</p>
+              <p>Tên sản phẩm</p>
+              <p>Giá tiền</p>
+              <p>Số Lượng</p>
+              <p>Thành tiền</p>
+            </div>
+            <div class="order-details"></div>
+          </div>
+          <div class="summary">
+            <p id="sumProduct"></p>
+            <button id="btnBuy">Mua</button>
+            <button id="btnPurchased">Đã mua</button>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./assets/js/includeFile.js"></script>
+    <script src="./assets/js/evenDom.js"></script>
+    <script src="./assets/js/handleJson.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+#containers {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#containers > h2 {
+  text-align: center;
+  margin: 50px;
+}
+.container .cart-product {
+  display: grid;
+  grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+  justify-items: center;
+  padding: 10px 0px 20px 0px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.container .cart-product img {
+  width: 100px;
+  height: 70px;
+}
+.cart-product p,
+.cart-product i {
+  display: flex;
+}
+.cart-product i {
+  padding: 0px 10px;
+  cursor: pointer;
+}
+.cart-product .amount-product {
+  display: flex;
+}
+.cart-product .amount-product i {
+  margin: 0;
+}
+
+.cart-product .amount-product input {
+  height: 20px;
+  width: 50px;
+  text-align: center;
+}
+.cart-title {
+  margin-bottom: 30px;
+  padding: 0 !important;
+  border-bottom: 1px solid rgb(57, 55, 55) !important;
+}
+
+.summary {
+  float: right;
+  width: 300px;
+}
+.summary button {
+  background-color: rgb(237, 20, 20);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  width: 100px;
+}
+#btnPurchased a {
+  color: #fff;
+  text-decoration: none;
+}
+/* information */
+
+#form-user {
+  display: none;
+}
+
+/* purchase */
+.manipulation {
+  display: flex;
+}
+.list-product {
+  text-align: center;
+  display: flex;
+}
+.list-product i {
+  margin-top: 4px;
+  position: relative;
+}
+/* cái box này viết ở đâu */
+.box-product {
+  width: 800px;
+  border: 2px solid red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #e89090;
+  padding: 20px;
+  z-index: 2;
+  display: none;
+  transform: translate(-50%, -50%);
+}
+.box-product .cart-product {
+  grid-template-columns: 20% 20% 20% 20% 20% !important;
+}
+.open {
+  display: block;
+}
